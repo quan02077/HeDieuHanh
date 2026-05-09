@@ -1,0 +1,23 @@
+﻿<Window x:Class="Race_Condition.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Race_Condition"
+        xmlns:views="clr-namespace:Race_Condition.Views"
+        mc:Ignorable="d"
+        Title="Mô phỏng Race Condition" Height="650" Width="850"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <TabControl Margin="5">
+            <TabItem Header="Thực nghiệm">
+                <views:ThucNghiemView />
+            </TabItem>
+
+            <TabItem Header="Minh họa">
+                <views:MinhHoaView />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
